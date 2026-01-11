@@ -1,18 +1,23 @@
-/* ===== RESET ===== */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
+/* ================= BODY ================= */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(180deg, #070f26, #050b1a, #070f26);
+  background: linear-gradient(
+    180deg,
+    #070f26 0%,
+    #050b1a 50%,
+    #070f26 100%
+  );
   color: #ffffff;
 }
 
-/* ===== TOPO ===== */
+/* ================= TOPO ================= */
 .topo {
   text-align: center;
   margin-bottom: 30px;
@@ -23,13 +28,12 @@ body {
   margin-bottom: 10px;
 }
 
-/* ===== TÍTULO ===== */
 h1 {
   font-size: 26px;
   letter-spacing: 1px;
 }
 
-/* ===== FILTROS ===== */
+/* ================= FILTROS ================= */
 .filtros {
   max-width: 720px;
   margin: 0 auto 25px;
@@ -42,10 +46,14 @@ h1 {
   padding: 12px;
   border: 1px solid #c9a24d;
   background: #070b14;
-  color: #fff;
+  color: #ffffff;
 }
 
-/* ===== BOTÕES ===== */
+.filtros input::placeholder {
+  color: #9fa3b5;
+}
+
+/* ================= BOTÕES ================= */
 .acoes {
   display: flex;
   gap: 10px;
@@ -58,9 +66,14 @@ h1 {
   border: none;
   font-weight: bold;
   cursor: pointer;
+  color: #070b14;
 }
 
-/* ===== TABELA ===== */
+.acoes button:hover {
+  opacity: 0.9;
+}
+
+/* ================= TABELA ================= */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -71,26 +84,36 @@ thead th {
   color: #070b14;
   padding: 14px;
   text-align: center;
-}
-
-td {
-  padding: 12px;
-  text-align: center;
-  font-size: 16px;
-}
-
-tbody tr {
-  border-bottom: 1px dotted #2a2f45;
-}
-
-tbody tr:hover {
-  background: #0b1326;
-}
-
-/* ===== LINK DO IMÓVEL ===== */
-td:first-child {
   font-weight: bold;
+}
+
+/* ================= CÉLULAS ================= */
+td {
+  padding: 14px 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ================= LINHAS DOURADAS ================= */
+/* Linha fina dourada separando cada imóvel */
+tbody tr {
+  border-bottom: 1px solid rgba(201, 162, 77, 0.35);
+}
+
+/* Fundo alternado sutil (melhora leitura) */
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Hover elegante */
+tbody tr:hover {
+  background: rgba(201, 162, 77, 0.08);
+}
+
+/* ================= LINK DO IMÓVEL ================= */
+td:first-child {
   color: #e6c27a;
+  font-weight: bold;
 }
 
 .link-imovel {
@@ -102,9 +125,10 @@ td:first-child {
   text-decoration: underline;
 }
 
-/* ===== RODAPÉ ===== */
+/* ================= RODAPÉ ================= */
 footer {
   margin-top: 30px;
   text-align: center;
   color: #b5b5b5;
+  font-size: 14px;
 }
