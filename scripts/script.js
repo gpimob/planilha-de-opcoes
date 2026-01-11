@@ -1,16 +1,12 @@
-// ================= ALERTA AO CORRETOR (APARECE APENAS UMA VEZ) =================
-if (!localStorage.getItem("alertaCorretor")) {
-  alert(
-    "Olá corretor parceiro!\n\n" +
-    "Você está acessando minha planilha de opções diretas atualizada.\n\n" +
-    "Ao clicar no nome de cada opção, você será redirecionado para uma pasta no Drive " +
-    "contendo as fotos e a descrição de cada imóvel."
-  );
-  localStorage.setItem("alertaCorretor", "true");
-}
+// ================= ALERTA AO CORRETOR (APARECE SEMPRE) =================
+alert(
+  "Olá corretor parceiro!\n\n" +
+  "Você está acessando minha planilha de opções diretas atualizada.\n\n" +
+  "Ao clicar no nome de cada opção, você será redirecionado para uma pasta no Drive " +
+  "contendo as fotos e a descrição de cada imóvel."
+);
 
 // ================= DADOS ORIGINAIS =================
-// Cada imóvel pode conter uma URL (Drive, PDF, site, etc)
 const dadosOriginais = [
   { 
     nome: "Aloha", 
@@ -42,11 +38,11 @@ const dadosOriginais = [
   }
 ];
 
-// ================= ESTADO DA APLICAÇÃO =================
+// ================= ESTADO =================
 let dadosVisiveis = [...dadosOriginais];
 let ordemCrescente = true;
 
-// ================= ELEMENTOS DO DOM =================
+// ================= DOM =================
 const tbody = document.getElementById("tabela-dados");
 
 const inputNome = document.getElementById("search-nome");
@@ -57,20 +53,13 @@ const inputTipologia = document.getElementById("search-tipologia");
 const btnLimpar = document.getElementById("limpar");
 const btnOrdenar = document.getElementById("ordenar");
 
-// ================= FUNÇÕES AUXILIARES =================
-// Converte valor monetário para número (para ordenação)
+// ================= FUNÇÕES =================
 function valorNumerico(valor) {
   return Number(
-    valor
-      .replace("R$", "")
-      .replace(/\./g, "")
-      .replace(",", ".")
-      .trim()
+    valor.replace("R$", "").replace(/\./g, "").replace(",", ".").trim()
   );
 }
 
-// ================= RENDERIZAÇÃO DA TABELA =================
-// Monta a tabela dinamicamente
 function renderTabela(lista) {
   tbody.innerHTML = "";
 
@@ -93,7 +82,6 @@ function renderTabela(lista) {
 }
 
 // ================= FILTROS =================
-// Aplica filtros conforme o usuário digita
 function aplicarFiltros() {
   dadosVisiveis = dadosOriginais.filter(i =>
     (!inputNome.value || i.nome.toLowerCase().includes(inputNome.value.toLowerCase())) &&
@@ -106,7 +94,6 @@ function aplicarFiltros() {
 }
 
 // ================= AÇÕES =================
-// Ordenar por valor (crescente / decrescente)
 btnOrdenar.onclick = () => {
   dadosVisiveis.sort((a, b) =>
     ordemCrescente
@@ -118,7 +105,6 @@ btnOrdenar.onclick = () => {
   renderTabela(dadosVisiveis);
 };
 
-// Limpar filtros e restaurar lista original
 btnLimpar.onclick = () => {
   inputNome.value = "";
   inputBairro.value = "";
@@ -130,10 +116,8 @@ btnLimpar.onclick = () => {
 };
 
 // ================= EVENTOS =================
-// Dispara o filtro automaticamente ao digitar
 [inputNome, inputBairro, inputValor, inputTipologia]
   .forEach(input => input.addEventListener("input", aplicarFiltros));
 
 // ================= INICIALIZAÇÃO =================
-// Renderiza a tabela ao carregar a página
 renderTabela(dadosOriginais);
