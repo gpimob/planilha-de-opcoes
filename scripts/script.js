@@ -44,7 +44,7 @@ function renderTabela(lista) {
       <tr>
         <td data-label="Imóvel">
           <a href="${i.url}" target="_blank" class="link-imovel">
-            ${i["Nome do imovel"]}
+            ${i["Tipo de imóvel"]}
           </a>
         </td>
         <td data-label="Bairro">${i.Bairro}</td>
@@ -59,7 +59,7 @@ function renderTabela(lista) {
 // ===== FILTROS =====
 function aplicarFiltros() {
   dadosVisiveis = dadosOriginais.filter(i =>
-    i["Nome do imovel"].toLowerCase().includes(inputNome.value.toLowerCase()) &&
+    i["Tipo de imóvel"].toLowerCase().includes(inputNome.value.toLowerCase()) &&
     i.Bairro.toLowerCase().includes(inputBairro.value.toLowerCase()) &&
     String(i.Valor).toLowerCase().includes(inputValor.value.toLowerCase()) &&
     i.Tipologia.toLowerCase().includes(inputTipologia.value.toLowerCase()) &&
