@@ -2,7 +2,7 @@
   {
     "Nome do imovel": "Paraíso particular",
     "Bairro": "Ilha da Gipóia",
-    "Valor": 12000000,
+    "Valor": "R$12.000.000,00",
     "Tipologia": "6qts",
     "Condominio": "-",
     "url": "https://drive.google.com/drive/folders/1gmjgJ0kQyjpaEz4Nu_kjei79QsD3nrN5"
@@ -10,7 +10,7 @@
   {
     "Nome do imovel": "Casa",
     "Bairro": "Mangaratiba",
-    "Valor": "R$11 .000.000,00",
+    "Valor": "R$11.000.000,00",
     "Tipologia": "5qts",
     "Condominio": "-",
     "url": "https://drive.google.com/drive/folders/1z1CI7PCkFULo1wYa-FSHCE8jFPPBb3zR"
