@@ -2,7 +2,7 @@
 alert(
   "Olá corretor parceiro e cliente!\n\n" +
   "Você está acessando minha planilha de opções diretas atualizada.\n\n" +
-  "Ao clicar no nome do imóvel, você será redirecionado para a pasta com fotos e descrição."
+  "Ao clicar no tipo de imóvel, você será redirecionado para a pasta com fotos e descrição."
 );
 
 // ===== VARIÁVEIS =====
