@@ -1414,5 +1414,61 @@
     "Tipologia": "3qts",
     "Condominio": "Condomínio Village Suisse | Alto Teresópolis",
     "url": "https://drive.google.com/drive/folders/1gvDTAa7EDqSju8HyhIajHCLje-8zlikn"
+  },
+    {
+    "Tipo de imóvel": "Apartamento",
+    "Bairro": "Barra da Tijuca",
+    "Valor": "R$1.814.000,00",
+    "Tipologia": "3qts",
+    "Condominio": "Latitud Condominium Design",
+    "url": "https://drive.google.com/drive/u/4/folders/1Hcn_AS6TN6x62SPG_vENnrMnOegVE96P"
+  },
+  {
+    "Tipo de imóvel": "Apartamento",
+    "Bairro": "Barra da Tijuca",
+    "Valor": "R$3.082.430,00",
+    "Tipologia": "4qts",
+    "Condominio": "Concept",
+    "url": "https://drive.google.com/drive/u/4/folders/18_geb4OfcqXo5buxrG6ZxsxtK27eVYBO"
+  },
+  {
+    "Tipo de imóvel": "Apartamento",
+    "Bairro": "Barra da Tijuca",
+    "Valor": "R$2.706.890,00",
+    "Tipologia": "3qts",
+    "Condominio": "Concept",
+    "url": "https://drive.google.com/drive/u/4/folders/118N-jQlTyZmrWCkA1_MG_5IfbA1uJLm5"
+  },
+  {
+    "Tipo de imóvel": "Cobertura Linear",
+    "Bairro": "Barra da Tijuca",
+    "Valor": "R$5.531.000,00",
+    "Tipologia": "4qts",
+    "Condominio": "Concept",
+    "url": "https://drive.google.com/drive/u/4/folders/1F1VyD-9Td4j--WIe8fUhIGzhVLM7Sn4O"
+  },
+  {
+    "Tipo de imóvel": "Apartamento",
+    "Bairro": "Barra da Tijuca",
+    "Valor": "R$3.687.073,00",
+    "Tipologia": "4qts",
+    "Condominio": "Orygem Acqua Home",
+    "url": "https://drive.google.com/drive/u/4/folders/147QsGlcF6z7xCLgJokk5C7iII2631lCw"
+  },
+  {
+    "Tipo de imóvel": "Cobertura Duplex",
+    "Bairro": "Barra da Tijuca",
+    "Valor": "R$3.700.000,00",
+    "Tipologia": "3qts",
+    "Condominio": "Wonderfull Ocean Suites",
+    "url": "https://drive.google.com/drive/u/4/folders/1M6r0R_PSeLrn0Hsr5w66ZEGZ-W_vh-GU"
+  },
+  {
+    "Tipo de imóvel": "Cobertura Duplex",
+    "Bairro": "Barra da Tijuca",
+    "Valor": "R$25.000,00",
+    "Tipologia": "3qts",
+    "Condominio": "Wonderfull Ocean Suites",
+    "url": "https://drive.google.com/drive/u/4/folders/1cArXbyJ1Y_tZdQ_hMgK44Pq0jSW2uSsx"
   }
 ]
